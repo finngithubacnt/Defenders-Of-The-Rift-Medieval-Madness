@@ -4,24 +4,29 @@ using UnityEngine.SceneManagement;
 
 public class PauseMenuManager : MonoBehaviour
 {
-    public GameObject container;
+    public GameObject pauseMenu;
+
+    private void Start()
+    {
+        pauseMenu.SetActive(false);
+    }
     private  void Update()
     {
        if (Input.GetKeyDown(KeyCode.Escape))
         {
-            container.SetActive(true);
+            pauseMenu.SetActive(true);
             Time.timeScale = 0;
         }  
     }
 
    public void ResumeButton()
     {
-        container.SetActive(false);
+        pauseMenu.SetActive(false);
         Time.timeScale = 1;
     }
 
     public void MainMenuButton()
     {
-        UnityEngine.SceneManagement.SceneManager.LoadScene("");
+     SceneManager.LoadScene("Menus");
     }
 }
