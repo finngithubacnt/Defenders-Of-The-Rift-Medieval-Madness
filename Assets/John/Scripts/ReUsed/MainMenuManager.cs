@@ -9,9 +9,10 @@ public class MainMenuManager : MonoBehaviour
 
     public void OnClickPlay()
     {
-        SceneManager.LoadScene("MainLevels");
-       
+        SceneManager.LoadScene("MainLevels1");
+
     }
+
    
     
 
