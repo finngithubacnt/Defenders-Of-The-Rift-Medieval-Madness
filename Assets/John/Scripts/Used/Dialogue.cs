@@ -1,4 +1,5 @@
 using UnityEngine;
+using TMPro;
 using System.Collections.Generic;
 using System;
 [Serializable]
@@ -13,7 +14,7 @@ public class Dialogue : MonoBehaviour
    public List<DialoguePiece> dialogue;
 
     public TMPro.TMP_Text dialogueText;
-    public TMPro.TMP_Text dialoguNname;
+    public TMPro.TMP_Text dialoguename;
     public void StartDialogue()
     {
         Debug.Log("hello,World");
