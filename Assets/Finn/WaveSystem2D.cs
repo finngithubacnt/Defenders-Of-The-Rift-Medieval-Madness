@@ -43,7 +43,7 @@ public class WaveSystem2D : MonoBehaviour
         EnemiesAlive = enemiesToSpawn;
         for (int i = 0; i < enemiesToSpawn; i++)
         {
-            GameObject projectile = Instantiate(EnemyDefault, spawn1.position, spawn1.rotation &);
+            GameObject projectile = Instantiate(EnemyDefault, spawn1.position, spawn1.rotation );
             Rigidbody2D rb = projectile.GetComponent<Rigidbody2D>();
         }
     }
