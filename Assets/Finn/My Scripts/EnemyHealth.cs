@@ -3,19 +3,20 @@ using UnityEngine;
 public class EnemyHealth : MonoBehaviour
 {
     PlayerHealth playerHealth;
-    private bool isDead = false;
+    public bool isDead = false;
     public float Ehealth = 10;
     public GameObject me;
-    private bool isAttacking = false;
+    public bool isAttacking = false;
     public GameObject player;
-    
+    public GameObject Me1;
+
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
         Ehealth = 10;
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
+    public void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(gameObject.name);
         // Check if the collided GameObject has the desired tag
@@ -33,7 +34,7 @@ public class EnemyHealth : MonoBehaviour
         
 
     }
-    private void OnCollisionExit2D(Collision2D collision)
+    public void OnCollisionExit2D(Collision2D collision)
     {
         // Check if the collided GameObject has the desired tag
         if (collision.gameObject.CompareTag("Player"))
@@ -42,22 +43,23 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    private void Update()
+    public void Update()
     {
-        if (Ehealth < 0)
+        if (Ehealth <= 0)
         { 
             isDead = true;
             player.gameObject.GetComponentInChildren<WaveSystem2D>().EnemiesAlive -= 1;
-          
+            Ehealth = 10;
+            Destroy(Me1);
           
         }
 
         
         if (isDead)
         {
-           // player.gameObject.GetComponentInChildren<WaveSystem2D>().EnemiesAlive -= 1;
-            Destroy(me);
-            Destroy(gameObject);
+           player.gameObject.GetComponentInChildren<WaveSystem2D>().EnemiesAlive -= 1;
+           Destroy(me);
+           Destroy(gameObject);
         }
     }
 }

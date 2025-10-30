@@ -335,7 +335,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Preist_attack_JakeJ_0: -5845951872559446309
+      Preist_attack_JakeJ_1: 7969503637316090116
+      Preist_attack_JakeJ_2: -3233835822143493263
+      Preist_attack_JakeJ_3: 3464072844680814851
+      Preist_attack_JakeJ_4: 7392184424689948543
+      Preist_attack_JakeJ_5: -5251078370326860250
+      Preist_attack_JakeJ_6: -4172563211995826044
+      Preist_attack_JakeJ_7: 9061371402542468106
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
