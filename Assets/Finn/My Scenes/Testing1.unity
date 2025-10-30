@@ -508,6 +508,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3301995133145732316, guid: 13652a141cf69c34ba11aee61716d24f, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6343462216621578417, guid: 13652a141cf69c34ba11aee61716d24f, type: 3}
       propertyPath: m_Name
       value: player Variant Variant 1
@@ -1394,6 +1398,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5217020302477107075, guid: 9c61904064d4b874e9a355440f0cc405, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402736485033804790, guid: 9c61904064d4b874e9a355440f0cc405, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5402736485033804790, guid: 9c61904064d4b874e9a355440f0cc405, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Target
       value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5569163318055054285, guid: 9c61904064d4b874e9a355440f0cc405, type: 3}
