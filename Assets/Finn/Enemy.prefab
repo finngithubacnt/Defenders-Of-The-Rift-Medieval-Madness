@@ -667,8 +667,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4c032da40dd7d7140a54024e339e70d1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDead: 0
   Ehealth: 10
   me: {fileID: 6637594811572661082}
+  isAttacking: 0
   player: {fileID: 6343462216621578417, guid: 13652a141cf69c34ba11aee61716d24f, type: 3}
   Me1: {fileID: 6637594811572661082}
 --- !u!58 &7792940323943981040

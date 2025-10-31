@@ -14,21 +14,23 @@ public class DamageBox : MonoBehaviour
            
             Debug.Log("Collided with enemy");
             isAttacking = true;
-            enemyHealth.Ehealth -= 3;
+            collision.gameObject.GetComponent<EnemyHealth>().Ehealth -= 3;
+            //enemyHealth.Ehealth -= 3;
             Debug.Log("Enemy health reduced by 3");
             
             
         }
     }
-
+    
     private void OnCollisionExit2D(Collision2D collision)
     {
         // Reset attack
         if (collision.gameObject.GetComponent<EnemyHealth>() != null)
         {
+            collision.gameObject.GetComponent<EnemyHealth>().Ehealth -= 3;
             isAttacking = false;
+            
         }
-        Destroy(gameObject);
-        Destroy(this);
+        
     }
 }

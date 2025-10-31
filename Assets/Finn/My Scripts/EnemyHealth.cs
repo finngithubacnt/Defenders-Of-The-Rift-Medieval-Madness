@@ -43,7 +43,7 @@ public class EnemyHealth : MonoBehaviour
         }
     }
 
-    public void Update()
+    private void Update()
     {
         if (Ehealth <= 0)
         { 
